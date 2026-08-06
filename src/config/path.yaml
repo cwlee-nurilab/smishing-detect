@@ -1,0 +1,28 @@
+raw:
+  base_dir: "./data/raw"
+  label_0_dir: "정상"
+  label_0_csv: "smishing.csv"
+  label_1_jsonl: "smishing_labeled_total_fix_relabel_v8_dedup.jsonl"
+
+processed:
+  base_dir: "./data/processed"
+  label_0_jsonl: "label_0.jsonl"
+  label_1_jsonl: "label_1.jsonl"
+
+train:
+  base_dir: "./data/train"
+  label_0_jsonl: "label_0.jsonl"
+  label_1_jsonl: "label_1.jsonl"
+
+val:
+  base_dir: "./data/val"
+  label_0_jsonl: "label_0.jsonl"
+  label_1_jsonl: "label_1.jsonl"
+  output_jsonl: "./data/outputs/val_output.jsonl"
+
+test:
+  base_dir: "./data/test"
+  label_0_jsonl: "label_0.jsonl"
+  label_1_jsonl: "label_1.jsonl"
+  output_jsonl: "./data/outputs/test_output.jsonl"
+

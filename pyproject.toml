@@ -1,0 +1,22 @@
+[project]
+name = "smishing-detect"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # 데이터 분석 및 전처리
+    "pandas",
+    "msoffcrypto-tool",
+    "huggingface_hub",
+    "datasets",
+    "korean-name-generator",
+
+    # common 모듈
+    "openpyxl",
+    "python-dotenv",
+    "PyYAML",
+    "tqdm",
+
+    # 평가용
+    "scikit-learn",
+]
