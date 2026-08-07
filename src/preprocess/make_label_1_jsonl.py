@@ -8,6 +8,7 @@ from src.utils.io import read_jsonl, write_jsonl
 
 
 def make_label_1_jsonl():
+    print("[START] make_label_1_jsonl")
     path_loader = ConfigLoader("./src/config/path.yaml")
     raw_base_dir = path_loader.get("raw.base_dir")
     raw_label_1_jsonl_name = path_loader.get("raw.label_1_jsonl")
@@ -40,3 +41,5 @@ def make_label_1_jsonl():
 
     processed_label_1_jsonl_path = os.path.join(processed_base_dir, processed_label_1_jsonl_name)
     write_jsonl(str(processed_label_1_jsonl_path), final_data)
+
+    print("[DONE] make_label_1_jsonl")

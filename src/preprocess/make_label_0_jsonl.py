@@ -92,6 +92,8 @@ def _load_hf_csv(path:str):
 
 
 def make_label_0_jsonl():
+    print("[START] make_label_0_jsonl")
+
     load_dotenv()
     PASSWORD = os.getenv("PASSWORD", None)
     HF_TOKEN = os.getenv("HF_TOKEN", None)
@@ -137,3 +139,6 @@ def make_label_0_jsonl():
 
     label_0_jsonl_path = os.path.join(processed_base_dir, label_0_jsonl_name)
     write_jsonl(str(label_0_jsonl_path), final_results)
+
+    print("[DONE] make_label_0_jsonl")
+

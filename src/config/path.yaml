@@ -10,19 +10,13 @@ processed:
   label_1_jsonl: "label_1.jsonl"
 
 train:
-  base_dir: "./data/train"
-  label_0_jsonl: "label_0.jsonl"
-  label_1_jsonl: "label_1.jsonl"
+  train_jsonl: "./data/train/train.jsonl"
 
 val:
-  base_dir: "./data/val"
-  label_0_jsonl: "label_0.jsonl"
-  label_1_jsonl: "label_1.jsonl"
+  val_jsonl: "./data/val/val.jsonl"
   output_jsonl: "./data/outputs/val_output.jsonl"
 
 test:
-  base_dir: "./data/test"
-  label_0_jsonl: "label_0.jsonl"
-  label_1_jsonl: "label_1.jsonl"
+  test_jsonl: "./data/test/test.jsonl"
   output_jsonl: "./data/outputs/test_output.jsonl"
 
