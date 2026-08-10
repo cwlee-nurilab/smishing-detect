@@ -18,5 +18,5 @@ val:
 
 test:
   test_jsonl: "./data/test/test.jsonl"
-  output_jsonl: "./data/outputs/test_output.jsonl"
+  output_dir: "./data/outputs"
 

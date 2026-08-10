@@ -1,0 +1,35 @@
+beomi/KcELECTRA-base:
+  model_name: "beomi/KcELECTRA-base"
+  device: "cuda:0"
+
+  train:
+    output_dir: "./models/KcELECTRA-base/" 
+    
+    num_labels: 2
+
+    per_device_train_batch_size: 64
+    per_device_eval_batch_size: 64
+
+    seed: 42
+    weight_decay: 0.01
+
+    save_strategy: "epoch"
+    eval_strategy: "epoch"
+
+    # optuna
+    num_train_epochs:
+      default: 3
+      low: 2
+      high: 5
+    learning_rate: 
+      default: 2e-5
+      low: 1e-6
+      high: 5e-5
+    weight_decay:
+      default: 0.01
+      low: 0.001
+      high: 0.1
+    warmup_ratio:
+      default: 0.01
+      low: 0.001
+      high: 0.1
